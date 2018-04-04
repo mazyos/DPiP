@@ -14,3 +14,6 @@ Template Pattern の発展形ともいえるパターン。Template Pattern で�
 Pythonもまた動的型付け言語なのでRuby同様に DuckTyping を利用できるため、ロジックを Template Pattern で縛る必要がなければ、抽象基底クラスを継承させなくても構わない。
 
 ## Observer
+オブジェクトの変更を他のオブジェクトでハンドルする際のパターン。
+
+Rubyは単一継承しかサポートしないので、パターンの実装をMixInを使用して取り込むが、Pythonでは多重継承を使ってこれを行う。通知を受け取るConsumerが単純に通知を受け取るだけならば、Pythonでも無名関数を使用できるので、それを使用すると簡素な実装となる。
